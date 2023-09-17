@@ -6,6 +6,8 @@ import dev.arif.inheritencetabledemo.joinedTable.User;
 //import dev.arif.inheritencetabledemo.MappedSuperClass.UserRepository;
 //import dev.arif.inheritencetabledemo.tableperclass.MentorRepository;
 //import dev.arif.inheritencetabledemo.tableperclass.UserRepository;
+//import dev.arif.inheritencetabledemo.joinedTable.MentorRepository;
+//import dev.arif.inheritencetabledemo.joinedTable.UserRepository;
 import dev.arif.inheritencetabledemo.joinedTable.MentorRepository;
 import dev.arif.inheritencetabledemo.joinedTable.UserRepository;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -60,6 +62,19 @@ public class InheritenceTableDemoApplication implements CommandLineRunner {
         mentor.setAverageRating(4.5);
         mentorRepository.save(mentor);*/
 
+       /* // Create a user
+        User user = new User();
+        user.setName("Arif");
+        user.setEmail("arif@mail.com");
+        userRepository.save(user);*/
+
+        // Create a mentor
+       /* Mentor mentor = new Mentor();
+        mentor.setName("khan");
+        mentor.setEmail("khan@mail.com");
+        mentor.setAverageRating(4.5);
+        mentorRepository.save(mentor);*/
+
         // Create a user
         User user = new User();
         user.setName("Arif");
@@ -71,7 +86,6 @@ public class InheritenceTableDemoApplication implements CommandLineRunner {
         mentor.setName("khan");
         mentor.setEmail("khan@mail.com");
         mentor.setAverageRating(4.5);
-        mentorRepository.save(mentor);
 
     }
 
